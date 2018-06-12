@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+    $("#animate").click(function(){
+        $("div").animate({left: '250px',background: '#FF0000'});
+		
+    });
+	
+	$("#animateBack").click(function(){
+        $("div").animate({left: '0px',background: '#98bf21'});
+		
+    });
+	
+	$("#drink").click(function(){
+        $("#p1").css("color", "red").slideUp(2000).slideDown(2000);
+    });
+	
+	
+	$("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+
+</script> 
+</head>
+<body>
+
+<button id="animate">Start Animation</button>
+<button id="animateBack">Rewind</button>
+
+<button id="hide">Hide</button>
+<button id="show">Show</button>
+<button id="drink">Drink</button>
+
+<p>Some fun with jQuery</p>
+<p id="p1">I am DRUNK</p>
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce magna nunc, pellentesque eget tincidunt eu, egestas et enim. Vestibulum fringilla ultricies nisi, vel efficitur tortor congue vitae. Suspendisse potenti. Fusce pulvinar erat in dolor mattis semper. Sed nec massa leo. Nulla fringilla egestas diam, vitae sagittis lorem hendrerit facilisis. In scelerisque semper dapibus. Sed eget volutpat est. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse lacus massa, finibus et imperdiet in, fringilla vel risus. Curabitur elementum nisi quis arcu pretium fringilla. Nam pretium arcu eget lectus egestas, at posuere metus scelerisque.
+
+Vivamus a lacus leo. In et ultricies elit, a euismod metus. Nulla facilisis, lectus nec pellentesque consectetur, est velit fermentum dolor, a mollis nibh metus nec arcu. Phasellus a congue purus. Sed finibus lacus libero, non aliquam tellus convallis quis. Nulla felis diam, dictum et ligula ac, commodo venenatis eros. Maecenas a suscipit felis. Nulla condimentum lacus vel massa malesuada imperdiet ut id diam.
+
+Sed placerat dignissim mauris, a bibendum urna lobortis condimentum. Curabitur quis iaculis ex. Nam non mi eu ipsum aliquam ultrices ut venenatis ipsum. Mauris in dignissim nunc. Maecenas eget ipsum gravida, tempor ipsum et, ultricies dolor. Vestibulum quis vehicula velit. Praesent massa dolor, sagittis id aliquet et, viverra at velit. Vestibulum mollis consectetur magna, eu consectetur leo tincidunt et.
+
+Nam ut dapibus felis. Aenean lobortis augue a rhoncus consectetur. In hac habitasse platea dictumst. Praesent quis magna dictum mi suscipit ultricies eget vel purus. Mauris at varius nisl, sit amet viverra dolor. Proin semper facilisis quam vitae pretium. Curabitur eu venenatis velit, vitae consectetur metus.
+
+Aenean metus leo, dapibus eget eleifend eu, sodales eu justo. Suspendisse aliquet posuere nunc id finibus. In rutrum eros turpis, semper interdum nunc tristique at. Maecenas magna massa, aliquet ut velit quis, iaculis dictum quam. Vestibulum euismod libero id mi ultricies, at porttitor augue pretium. Aenean odio arcu, consequat quis cursus nec, vehicula quis nisl. Vestibulum a ultricies augue. Ut sollicitudin leo id tincidunt porttitor. Ut venenatis semper velit, a rhoncus leo congue non. Mauris placerat convallis varius. Nam ut dapibus nunc, in fermentum tellus. Nulla iaculis euismod sem, nec sollicitudin eros venenatis eu. Maecenas eget tortor eu orci dignissim hendrerit nec sed ex. Aenean aliquet neque ac velit tincidunt, quis interdum dolor vestibulum.
+</p>
+<div style="background:#98bf21;height:100px;width:100px;position:absolute;"></div>
+
+</body>
+</html>
